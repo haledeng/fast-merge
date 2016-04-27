@@ -4,11 +4,12 @@
   "description": "merge multy files into one",
   "main": "index.js",
   "dependencies": {
+    "chai": "^3.5.0",
     "minifier": "^0.7.1"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha test/"
   },
   "author": "denghailong",
   "license": "MIT"

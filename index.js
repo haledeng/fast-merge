@@ -43,4 +43,12 @@ function index() {
 	
 }
 
+
+module.exports = {
+	unLinkFile: unLinkFile,
+	merge: merge,
+	minifier: minifier
+};
+
+
 index();
