@@ -1,0 +1,15 @@
+{
+  "name": "fast-merge",
+  "version": "1.0.0",
+  "description": "merge multy files into one",
+  "main": "index.js",
+  "dependencies": {
+    "minifier": "^0.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "denghailong",
+  "license": "MIT"
+}
