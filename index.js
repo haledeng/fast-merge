@@ -49,6 +49,9 @@ module.exports = {
 	merge: merge,
 	minifier: minifier
 };
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> test
 index();
