@@ -15,5 +15,6 @@ describe('merge function', function() {
 describe('unLinkFile function', function() {
 	it('delete file success', function() {
 		index.unLinkFile('test/output.js');
+		expect(fs.existsSync('test/output.js')).to.equal(false);
 	});
 });
