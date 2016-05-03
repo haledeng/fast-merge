@@ -16,8 +16,12 @@ describe('unLinkFile function', function() {
 	it('delete file success', function() {
 		index.unLinkFile('test/output.js');
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 		expect(fs.existsSync('test/output.js')).to.equal(false);
 >>>>>>> test
+=======
+		expect(fs.existsSync('test/output.js')).to.equal(false);
+>>>>>>> 78c0aeb06c337800e6ec758eaa2c14606a83ceed
 	});
 });

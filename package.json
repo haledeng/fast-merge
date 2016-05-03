@@ -7,6 +7,10 @@
     "chai": "^3.5.0",
     "minifier": "^0.7.1"
   },
+  "bin": {
+    "fast-merge": "bin/cli.js",
+    "fm": "bin/cli.js" 
+  },
   "devDependencies": {},
   "scripts": {
     "test": "mocha test/"
