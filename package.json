@@ -1,6 +1,6 @@
 {
   "name": "fast-merge",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "merge multy files into one",
   "main": "index.js",
   "dependencies": {
@@ -9,12 +9,28 @@
   },
   "bin": {
     "fast-merge": "bin/cli.js",
-    "fm": "bin/cli.js" 
+    "fm": "bin/cli.js"
   },
   "devDependencies": {},
   "scripts": {
     "test": "mocha test/"
   },
   "author": "denghailong",
-  "license": "MIT"
+  "license": "MIT",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haledeng/fast-merge.git"
+  },
+  "keywords": [
+    "fast",
+    "merge",
+    "files"
+  ],
+  "bugs": {
+    "url": "https://github.com/haledeng/fast-merge/issues"
+  },
+  "homepage": "https://github.com/haledeng/fast-merge#readme"
 }
