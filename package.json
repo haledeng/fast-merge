@@ -1,6 +1,6 @@
 {
   "name": "fast-merge",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "merge multy files into one",
   "main": "index.js",
   "dependencies": {

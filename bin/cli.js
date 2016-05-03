@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 var fastMerge = require('../index.js');
 
 function index() {
