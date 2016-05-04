@@ -4,14 +4,28 @@
  * node merge.js a.js b.js c.js output.js
  */
 
-var fs = require('fs');
+var fs = require('fs'),
+	path = require('path');
 
 function merge(list, output) {
 	list.forEach(function(file) {
 		var content = fs.readFileSync(file, 'utf-8');
-		// fs.appendFileSync(output, '\r\n/*' + file + '*/\r\n');
+		var dirname = path.dirname(output);
+		if (!fs.existsSync(dirname)) {
+			mkdir(dirname);
+		}
 		fs.appendFileSync(output, content);
 	});
+}
+
+
+function mkdir(dir) {
+	if (fs.existsSync(dir)) return;
+	var dirname = path.dirname(dir);
+	if (!fs.existsSync(dirname)) {
+		argument.callee(dirname);
+	} 
+	fs.mkdirSync(dir);
 }
 
 
@@ -32,5 +46,6 @@ function unLinkFile(file) {
 module.exports = {
 	unLinkFile: unLinkFile,
 	merge: merge,
-	minifier: minifier
+	minifier: minifier,
+	mkdir: mkdir
 };
