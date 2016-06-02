@@ -1,6 +1,6 @@
 {
   "name": "fast-merge",
-  "version": "1.2.0",
+  "version": "1.2.4",
   "description": "merge multy files into one",
   "main": "index.js",
   "dependencies": {
@@ -11,7 +11,10 @@
     "fast-merge": "bin/cli.js",
     "fm": "bin/cli.js"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "liftoff": "^2.2.1",
+    "minimist": "^1.2.0"
+  },
   "scripts": {
     "test": "mocha test/"
   },
