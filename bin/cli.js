@@ -1,8 +1,16 @@
 #!/usr/bin/env node
-var fastMerge = require('../index.js'),
+
+var fastMerge,
 	fs = require('fs'),
 	path = require('path');
 
+
+
+if (!env.modulePath) {
+	fastMerge = require('../');
+} else {
+	fastMerge = require(env.modulePath);
+}
 
 function getJSON() {
 	var jsonPath = path.dirname(__dirname) + '/package.json';
@@ -25,7 +33,7 @@ function index() {
 		fastMerge.unLinkFile(output);
 		fastMerge.merge(args, output);
 	}
-	
+
 	params = params.toLowerCase();
 	if (params.indexOf('-m') > -1) {
 		output && fastMerge.minifier(output);
